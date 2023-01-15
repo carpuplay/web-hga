@@ -1,5 +1,4 @@
-# Voyage Slider | GSAP
+# HGA WEB | Alexandru Carp
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/dev_loop/pen/MWKbJmO](https://codepen.io/dev_loop/pen/MWKbJmO).
-
-Inspired by this design: https://dribbble.com/shots/6759822-Voyage-travel-website
+Created by a student of Lycée Comte de Foix, for educational purposes, all images are free to use.
+For more information please email me:     acarpmihai2005@gmail.com
