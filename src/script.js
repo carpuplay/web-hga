@@ -256,4 +256,10 @@ const waitForImages = () => {
 	});
 };
 
+function redirect () {
+	document.getElementById("card current--card").onclick = function (){
+		location.href = "https://www.google.com";
+	};
+};
+
 waitForImages();

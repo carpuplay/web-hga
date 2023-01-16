@@ -96,7 +96,7 @@ button:focus {
   justify-content: center;
 }
 
-.button {
+.button2 {
   width: 140px;
   height: 45px;
   font-family: 'Roboto', sans-serif;
@@ -114,7 +114,7 @@ button:focus {
   outline: none;
   }
 
-.button:hover {
+.button2:hover {
   background-color: #2EE59D;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;

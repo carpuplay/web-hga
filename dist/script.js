@@ -16,7 +16,6 @@ buttons.next.addEventListener("click", () => swapCards("right"));
 
 buttons.prev.addEventListener("click", () => swapCards("left"));
 
-
 function swapCards(direction) {
 	const currentCardEl = cardsContainerEl.querySelector(".current--card");
 	const previousCardEl = cardsContainerEl.querySelector(".previous--card");
@@ -70,7 +69,7 @@ function swapCards(direction) {
 			previousBgImageEl.classList.add("current--image");
 			nextBgImageEl.classList.add("previous--image");
 		}
-	}
+	}	
 }
 
 function changeInfo(direction) {
@@ -253,5 +252,6 @@ const waitForImages = () => {
 		});
 	});
 };
+
 
 waitForImages();
