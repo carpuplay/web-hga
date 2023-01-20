@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
+
+header, footer, #smooth-content {
+  visibility: hidden;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-color: #161616;
+  font-family: "Signika Negative", sans-serif;
+  color: white;
+}
+
+header {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  width: 100%;
+  z-index: 3;
+  height: 5em;
+  font-size: clamp(0.66rem, 2vw, 1rem);
+  letter-spacing: 0.2em;
+  color: solid grey;
+}
+
+.heading {
+  position: fixed;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.heading h1 {
+  font-size: 12vw;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  will-change: transform;
+}
+
+.section {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: perspective(400px);
+  transform-style: preserve-3d;
+   max-width: 500px;
+}
+
+.hide {
+  overflow: hidden;
+  margin-top: 1.2rem;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 > *, h2 > * {
+  will-change: transform;
+}
+
+h2 {
+  font-size: clamp(0.66rem, 3vw, 2.5rem);
+  margin: 0;
+}
+
+p {
+  margin-top: 0.5rem;
+  opacity: 0.4;
+}
+
+.section--lg, .end {
+  min-width: 100vw;
+}
+
+.card {
+  width: 80%;
+  z-index: 999;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.section:nth-child(2n) {
+  margin-top: -10vh;
+}
+
+.section:nth-child(3n) {
+  margin-top: 30vh;
+}
+
+.noise {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+img {
+  border-radius: 10px;
+}
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  font-size: clamp(0.66rem, 2vw, 1rem);
+  letter-spacing: 0.2em;
+  font-weight: 100;
+}
+
+.green {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #28a92b;
+  z-index: 999;
+  opacity: 0;
+  will-change: transform;
+}
+
+.end {
+  margin: 0!important;
+}
+
+.end h2 {
+  font-size: 5vw;
+}

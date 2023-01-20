@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
+
+header {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  width: 100%;
+  z-index: 999;
+  height: 7em;
+  font-size: clamp(0.66rem, 2vw, 1rem);
+  letter-spacing: 0.2em;
+  color: solid grey;
+  background-color: #eee;
+  font-family: "Signika Negative", sans-serif;
+  }
+
+
 body {
   font-family: Termina, sans-serif;
   color: #111;
@@ -19,7 +39,7 @@ section {
 .credit {
   font-family: Termina, sans-serif;
   text-align: center;
-  z-index: 999;
+  z-index: 998;
   font-size: 0.8rem;
   position: fixed;
   bottom: 1rem;
@@ -40,7 +60,7 @@ h1 {
   margin: 2rem auto;
   font-size: clamp(3.5vw, 2.7rem, 4.5rem);
   text-align: center;
-  z-index: 999;
+  z-index: 998;
   max-width: 900px;
   mix-blend-mode: difference;
   pointer-events: none;
@@ -59,13 +79,13 @@ h3 {
   margin: 4rem auto;
   font-size: clamp(2vw, 1.5rem, 4rem);
   text-align: center;
-  z-index: 999;
-  max-width: 600px;
+  z-index: 998;
+  max-width: 100rem;
   mix-blend-mode: difference;
   pointer-events: none;
   color: white;
   position: absolute;
-  top: 10%;
+  top: 6rem;
   left: 0;
   right: 0;
   bottom: 0;
@@ -115,6 +135,18 @@ h4 {
 @media (max-width: 768px) {
   .gallery {
     width: 160%;
+  
+  }
+  .h1 {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 2000px) {
+  .h3 {
+    font-size: 80%;
+    max-width: 40rem;
+
   }
 }
 
